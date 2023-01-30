@@ -20,7 +20,7 @@ public class BoundsSizeController : MonoBehaviour
     private Rect arena;
     private float oldCameraAspect;
 
-    private void Start()
+    private void Awake()
     {
         camera = FindObjectOfType<Camera>();
         arena.position = Vector2.zero;
